@@ -32,4 +32,10 @@ class CI_TemplateTests: XCTestCase {
         XCTAssertEqual("Code Does Good", viewController.testLabel.text)
     }
     
+    func testFont() {
+        let _ = viewController.view
+        
+        XCTAssertEqual(viewController.testLabel.font, UIFont.systemFont(ofSize: 17.0))
+    }
+    
 }
